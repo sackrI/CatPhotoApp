@@ -1,0 +1,59 @@
+body {
+    background-image: url(../images/colors-landscape-background.jpg);
+}
+
+form {
+    color: rgb(165, 42, 42);
+    background-color:rgba(255, 235, 205, 0.85);
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+header {
+    color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+  
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input, textarea, select {
+    margin: 10px auto;
+    width: 99%;
+    min-height: 2em;
+}
+
+.input-radio, .input-checkbox {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+    display: inline;
+}
+
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #1ec45e;
+    border-color:rgba(255, 235, 205, 0.85);
+    min-width: 300px;
+}

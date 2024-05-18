@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Mental Health Survey</h1>
+            <p id="description">Please fill out this survey form for availing government provided mental health benefits</p>
+        </header>
+    <form id="survey-form">
+<fieldset>
+    <label id="name-label" for="name">Name: <input id="name" name="name" type="text" placeholder="Enter your name" required/></label>
+    <label id="email-label" for="email">Email: <input id="email" name="email" type="email" placeholder="Enter your email" required/></label>
+    <label id="number-label" for="number">Age(optional): <input id="number" name="age" type="number" min="1" max="150" placeholder="enter your age"/></label>
+</fieldset>
+<fieldset>
+    <label id="dropdown-label" for="dropdown">What is your employment status?
+        <select id="dropdown" name="employment-status" required>
+            <option value="">(select one)</option>
+            <option value="1">unemployed</option>
+            <option value="2">self-employed</option>
+            <option value="3">employed</option>
+            <option value="4">retired</option>
+    </select>
+    </label>
+</fieldset>
+<fieldset>
+    <legend>Disability status (required)</legend>
+    <label for="un-registered"><input id="un-registered" type="radio" name="disability-status" value="un-registered" class="input-radio" checked/>un-registered</label>
+    <label for="registered"><input id="registered" type="radio" name="disability-status" value="registered" class="input-radio"/>registered</label>
+</fieldset>
+<fieldset>
+    <legend>Diagnosed illnesses (check all that apply):</legend>
+    <label><input name="diagnosis" value="schizophrenia" type="checkbox" class="input-checkbox"/> Schizophrenia</label>
+    <label><input name="diagnosis" value="OCD" type="checkbox" class="input-checkbox"/> Obsessive-Compulsive Disorder</label>
+    <label><input name="diagnosis" value="bipolar" type="checkbox" class="input-checkbox"/> Bipolar Disorder</label>
+    <label><input name="diagnosis" value="SAD" type="checkbox" class="input-checkbox"/> Social Anxiety Disorder</label>
+    <label><input name="diagnosis" value="depression" type="checkbox" class="input-checkbox"/> Clinical Depression</label>
+    <label><input name="diagnosis" value="PTSD" type="checkbox" class="input-checkbox"/> Post-Traumatic Stress Disorder</label>
+    <label><input name="diagnosis" value="others" type="checkbox" class="input-checkbox"/> Other</label>
+</fieldset>
+<fieldset>
+    <label for="other-diagnoses">If other, please specify: <textarea id="other-diagnoses" name="other-diagnoses" rows="3" cols="30" placeholder="I have multiple personalities..."></textarea></label>
+</fieldset>
+<input id ="submit" type="submit" value="Submit" />
+</form>
+</div>
+</body>
+</html>
